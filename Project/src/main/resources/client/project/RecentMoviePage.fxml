@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.project.RecentMoviePageController">
+    <children>
+        <TableView fx:id="table" layoutX="56.0" layoutY="81.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pickOnBounds="false" prefHeight="275.0" prefWidth="700.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="125.0">
+            <columns>
+                <TableColumn fx:id="titleColumn" prefWidth="140.0" text="Title" />
+                <TableColumn fx:id="releaseYearColumn" prefWidth="85.0" text="Release Year" />
+                <TableColumn fx:id="genreColumn" prefWidth="200.0" text="Genre" />
+                <TableColumn fx:id="runningTimeColumn" prefWidth="100.0" text="Running Time" />
+                <TableColumn fx:id="budgetColumn" prefWidth="85.0" text="Budget" />
+                <TableColumn fx:id="revenueColumn" prefWidth="85.0" text="Revenue" />
+            </columns>
+        </TableView>
+      <Label layoutX="386.0" layoutY="65.0" prefHeight="40.0" prefWidth="280.0" text="MOST RECENT MOVIES" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="375.0" layoutY="434.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="25.0" prefWidth="50.0" text="BACK" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="434.0" />
+    </children>
+
+</AnchorPane>

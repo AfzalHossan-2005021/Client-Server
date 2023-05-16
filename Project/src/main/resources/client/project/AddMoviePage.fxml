@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.project.AddMoviePageController">
+   <children>
+      <Label layoutX="386.0" layoutY="34.0" prefHeight="40.0" prefWidth="370.0" text="ENTER DETAILS OF THE MOVIE" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <HBox layoutX="300.0" layoutY="200.0" prefHeight="240.0" prefWidth="601.0" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="125.0">
+         <children>
+            <VBox prefHeight="240.0" prefWidth="162.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="200.0" text="TITLE ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="200.0" text="YEAR OF RELEASE ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="140.0" text="GENRE ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0" text="RUNNING TIME ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0" text="BUDGET ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0" text="REVENUE ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="240.0" prefWidth="486.0">
+               <children>
+                  <TextField fx:id="titleTextField">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="5.0" top="5.0" />
+                     </VBox.margin></TextField>
+                  <TextField fx:id="releaseYearTextField">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="4.0" left="5.0" top="5.0" />
+                     </VBox.margin></TextField>
+                  <HBox prefHeight="40.0" prefWidth="400.0">
+                     <children>
+                        <TextField fx:id="genre1TextField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="genre2TextField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="genre3TextField">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="runningTimeTextField" prefHeight="31.0" prefWidth="396.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="budgetTextField">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="revenueTextField">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children></VBox>
+         </children>
+      </HBox>
+      <Button layoutX="430.0" layoutY="431.0" mnemonicParsing="false" onAction="#addMovieRequest" text="ADD MOVIE" AnchorPane.rightAnchor="300.0" />
+      <Label fx:id="noticeLabel" layoutX="246.0" layoutY="389.0" textFill="RED" />
+      <Button layoutX="321.0" layoutY="431.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="25.0" prefWidth="81.0" text="BACK" AnchorPane.leftAnchor="300.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.project.LoginController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" layoutX="147.0" layoutY="95.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@LoginPageBackground.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="51.0" layoutY="141.0" prefHeight="179.0" prefWidth="303.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="40.0" prefWidth="117.0" text="COMPANY NAME" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="companyNameTextField" prefHeight="30.0" prefWidth="262.0" />
+            <Label prefHeight="40.0" prefWidth="79.0" text="PASSWORD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="passwordTextField" prefHeight="30.0" prefWidth="262.0" />
+            <Label fx:id="notRegisteredNotification" prefHeight="46.0" prefWidth="303.0" text="" textFill="RED" />
+         </children>
+      </VBox>
+      <Label layoutX="156.0" layoutY="87.0" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="177.0" layoutY="320.0" mnemonicParsing="false" onAction="#loginCheck" prefHeight="30.0" prefWidth="52.0" text="Login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

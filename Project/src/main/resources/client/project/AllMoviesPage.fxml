@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.project.AllMoviesPageController">
+   <children>
+      <TableView fx:id="table" layoutX="50.0" layoutY="125.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pickOnBounds="false" prefHeight="325.0" prefWidth="700.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="titleColumn" prefWidth="140.0" sortable="false" text="Title" />
+          <TableColumn fx:id="releaseYearColumn" prefWidth="85.0" text="Release Year" />
+            <TableColumn fx:id="genreColumn" prefWidth="200.0" sortable="false" text="Genre" />
+            <TableColumn fx:id="runningTimeColumn" prefWidth="100.0" text="Running Time" />
+            <TableColumn fx:id="budgetColumn" prefWidth="85.0" text="Budget" />
+            <TableColumn fx:id="revenueColumn" prefWidth="85.0" text="Revenue" />
+        </columns>
+      </TableView>
+      <Label layoutX="325.0" layoutY="35.0" prefHeight="40.0" prefWidth="150.0" text="ALL MOVIES" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Button layoutX="374.0" layoutY="461.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="25.0" prefWidth="50.0" text="BACK" textAlignment="CENTER" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="460.0" />
+   </children>
+</AnchorPane>

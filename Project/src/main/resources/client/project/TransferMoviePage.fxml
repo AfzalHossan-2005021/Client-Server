@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.project.TransferMoviePageController">
+   <Label layoutX="214.0" layoutY="47.0" prefHeight="40.0" prefWidth="400.0" text="MOVIE TRANSFERRING PROCESS" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="50.0">
+      <font>
+         <Font name="System Bold" size="25.0" />
+      </font>
+   </Label>
+   <Label layoutX="186.0" layoutY="182.0" text="TITLE OF THE MOVIE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="152.0" layoutY="258.0" text="DESTINATION COMPANY">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <TextField fx:id="titleTextField" layoutX="349.0" layoutY="179.0" prefHeight="25.0" prefWidth="278.0">
+      <font>
+         <Font size="15.0" />
+      </font></TextField>
+   <TextField fx:id="destinationCompanyTextField" layoutX="350.0" layoutY="255.0" prefHeight="25.0" prefWidth="278.0">
+      <font>
+         <Font size="15.0" />
+      </font></TextField>
+   <Button layoutX="470.0" layoutY="373.0" mnemonicParsing="false" onAction="#movieTransferRequest" prefHeight="25.0" prefWidth="94.0" text="TRANSFER" AnchorPane.rightAnchor="300.0" />
+   <Button layoutX="314.0" layoutY="373.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="25.0" prefWidth="94.0" text="BACK" AnchorPane.leftAnchor="300.0" />
+   <Label fx:id="companyNoticeLabel" layoutX="350.0" layoutY="302.0" prefHeight="31.0" prefWidth="278.0" textFill="RED">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="titleNoticeLabel" layoutX="350.0" layoutY="212.0" prefHeight="31.0" prefWidth="278.0" textFill="RED">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+</AnchorPane>

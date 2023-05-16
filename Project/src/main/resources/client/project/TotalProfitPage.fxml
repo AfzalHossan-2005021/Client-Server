@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.project.TotalProfitPageController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="101.0" prefHeight="60.0" prefWidth="800.0" text="Total Profit " AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="374.0" layoutY="336.0" mnemonicParsing="false" onAction="#backToHome" text="BACK" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="380.0" />
+      <TextArea fx:id="amountTextArea" editable="false" layoutX="331.0" layoutY="189.0" prefHeight="60.0" prefWidth="140.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

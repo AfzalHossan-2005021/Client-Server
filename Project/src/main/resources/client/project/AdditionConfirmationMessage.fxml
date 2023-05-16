@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.project.AdditionConfirmationMessageController">
+   <children>
+      <Button layoutX="75.0" layoutY="94.0" mnemonicParsing="false" onAction="#showAdditionSuccessfulMessage" text="YES" AnchorPane.leftAnchor="90.0" />
+      <Button layoutX="164.0" layoutY="94.0" mnemonicParsing="false" onAction="#back" text="NO" AnchorPane.rightAnchor="90.0" />
+      <Label fx:id="confirmationLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="136.0" layoutY="18.0" prefHeight="66.0" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
